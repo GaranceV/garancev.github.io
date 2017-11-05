@@ -16,7 +16,6 @@ h1 {
     line-height: 38px;
 }
 
-
 body,
 html {
     height: 100%;
@@ -26,7 +25,6 @@ html {
 *, *:before, *:after {
     box-sizing: border-box;
 }
-
 
 /**
 * Original by Rachel Andrews, gridbyexample.com
@@ -54,7 +52,7 @@ html {
 
     .wrapper {
         margin: 0 auto;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 3fr 1fr;
         height: 100%;
     }
 
@@ -81,4 +79,8 @@ html {
         width: auto;
         margin: 0;
     }
+}
+
+.ib {
+    display: inline-block
 }

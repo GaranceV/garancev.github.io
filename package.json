@@ -1,0 +1,24 @@
+{
+  "name": "garancev.github.io",
+  "version": "1.0.0",
+  "description": "garance's personal blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "handlebars": "",
+    "build": "rm -rf dist && mkdir dist && cp CNAME dist/ && cp index.html dist/ && cp cookies.html dist/ && cp -R pasta dist/ && cp -R css dist/ && cp -R assets/ dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@me.github.com:garancev/garancev.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Garance Flore Vallat",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^1.2.0",
+    "handlebars": "^4.0.11"
+  }
+}
