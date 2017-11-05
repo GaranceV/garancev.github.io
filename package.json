@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "handlebars": "",
-    "build": "rm -rf dist && mkdir dist && cp CNAME dist/ && cp index.html dist/ && cp cookies.html dist/ && cp -R pasta dist/ && cp -R css dist/ && cp -R assets/ dist/"
+    "build": "rm -rf dist && mkdir dist && cp CNAME dist/ && cp *.html dist/ && cp -R css dist/ && cp -R assets dist/"
   },
   "repository": {
     "type": "git",
