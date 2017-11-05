@@ -1,0 +1,16 @@
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+    img {
+        width: 350px;
+    }
+
+    .details {
+        display: inline-block;
+        max-width: 35%;
+        transform: translateY(-100%);        
+    }
+}
