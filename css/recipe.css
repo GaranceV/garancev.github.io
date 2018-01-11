@@ -11,6 +11,11 @@ img {
     .details {
         display: inline-block;
         max-width: 35%;
-        transform: translateY(-100%);        
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .details {
+        transform: translateY(-100%);
     }
 }
