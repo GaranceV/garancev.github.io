@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <title>Garance's blog - Classic cookies </title>
-        <meta name="description" content="Personal about web development and other hobbies. ">
-
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/recipe.css">
-    </head>
+    {{> head}}
     <body>
         <div class="wrapper">
             <header class="header">
@@ -53,13 +43,7 @@
             <aside class="sidebar">
                 <a href="index.html">Back to home</a>
             </aside>
-            <footer class="footer">
-                <hr />
-                
-                Last update: <timedatetime="2017-11-05T13:00">November 5th, 2017</time>
-                <br/>
-                2017 - Garance Vallat.
-            </footer>
+            {{> footer}}
         </div>
 
          <!-- Google Analytics -->
