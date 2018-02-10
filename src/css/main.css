@@ -1,43 +1,72 @@
 /** FONTS **/
 html {
     font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
-	line-height: 19.6px;
+    font-weight: 400;
+    font-size: 1em;
+	line-height: 1.4;
 }
-h1 {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 19px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    line-height: 38px;
+@media screen and (min-width: 500px) {
+    font-size: 1.125em;
+	line-height: 1.5;
 }
-
 body,
 html {
     height: 100%;
     margin: 0;
 }
 
+h2, p {
+    margin: 0;
+}
+a {
+    color: inherit;
+    outline: none;
+    padding: 3px;
+}
+a:focus:not(.img) {
+    background-color: #ffaf38;
+    padding: 1px;
+}
+.circle {
+    fill: none;
+    stroke: #00aced;
+    stroke-width: 2;
+}
+a.img:focus .circle {
+    stroke: #ffaf38;
+    stroke-width: 4;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
-
+h1 {
+    text-align: center;
+}
 /**
 * Original by Rachel Andrews, gridbyexample.com
 **/
 .wrapper {
-    max-width: 940px;
     margin: 0 20px;
     display: grid;
     grid-gap: 10px;
     height: 100%;
 }
+.twitter {
+    grid-row: 3;
+}
+.twitter-text {
+    width: 45%;
+    vertical-align: top;
+    padding-top: 20px;
+}
 
-@media screen and (min-width: 500px) {
+.clip-circle {
+    clip-path: url(#circle);
+}
+@media screen and (min-width: 630px) {
 
   /*Float as no-grid support*/
     .sidebar {
@@ -53,7 +82,7 @@ html {
     .wrapper {
         margin-top: auto;
         margin-bottom: auto;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 3fr 2fr;
         height: 100%;
     }
 
@@ -66,7 +95,9 @@ html {
 
     .footer {
     }
-
+    .twitter-text {
+        padding-top: 50px;
+    }
 }
 
 .wrapper > * {

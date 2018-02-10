@@ -6,8 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "handlebars": "node index.js",
+    "css": "cp -R src/css dist/",
+    "assets": "cp -R src/assets dist/ && cp src/favicon.ico dist/",
     "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run handlebars && cp -R src/css dist/ && cp -R src/assets dist/"
+    "watch": "npm run watch:hbs & npm run watch:css & npm run watch:assets",
+    "watch:hbs": "onchange 'src/templates/*.hbs' 'src/pages/*.hbs' 'src/index.hbs' -- npm run handlebars",
+    "watch:css": "onchange 'src/css/*.css' -- npm run css",
+    "watch:assets": "onchange 'src/assets/*.*' -- npm run assets",
+    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run handlebars && npm run css && npm run assets",
+    "serve": "http-server -c-1 dist/"
   },
   "repository": {
     "type": "git",
@@ -19,7 +26,7 @@
   "author": "Garance Flore Vallat",
   "license": "ISC",
   "devDependencies": {
-    "copyfiles": "^1.2.0",
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "onchange": "^3.3.0"
   }
 }

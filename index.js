@@ -56,12 +56,17 @@ const compileTemplates = () => {
     fs.readFile('src/pages/cookies.hbs', encoding, compileCookies);
     fs.readFile('src/pages/pasta.hbs', encoding, compilePasta);
 }
-
+const registerTwitter = (error, source) => {
+    if (error) throw error;
+    Handlebars.registerPartial('twitter', source);
+    
+    compileTemplates();
+}
 const registerFooter = (error, source) => {
     if (error) throw error;
     Handlebars.registerPartial('footer', source);
     
-    compileTemplates();
+    fs.readFile('src/templates/twitter.hbs', encoding, registerTwitter);
 }
 const registerHead = (error, source) => {
     if (error) throw error;
