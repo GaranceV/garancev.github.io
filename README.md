@@ -2,8 +2,8 @@
 
 TODO: 
 * Minify CSS
-* Copy production files to a specific folder
-
+* Minify HTML
+* Have a JS build system to apply transformations
 To deploy on master: 
 ```shell
 $ git ch master

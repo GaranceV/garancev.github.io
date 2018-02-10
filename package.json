@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "handlebars": "",
-    "build": "rm -rf dist && mkdir dist && cp CNAME dist/ && cp *.html dist/ && cp -R css dist/ && cp -R assets dist/"
+    "handlebars": "node index.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run handlebars && cp -R css dist/ && cp -R assets dist/"
   },
   "repository": {
     "type": "git",
