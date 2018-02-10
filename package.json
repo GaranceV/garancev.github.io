@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "handlebars": "node index.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run handlebars && cp -R css dist/ && cp -R assets dist/"
+    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run handlebars && cp -R src/css dist/ && cp -R src/assets dist/"
   },
   "repository": {
     "type": "git",
