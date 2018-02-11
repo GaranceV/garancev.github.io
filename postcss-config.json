@@ -1,0 +1,4 @@
+{
+"use": ["cssnano"],
+"local-plugins": true
+}
