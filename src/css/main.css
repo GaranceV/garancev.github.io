@@ -28,6 +28,7 @@ a {
 
 ul {
     list-style: none;
+    padding-left: 15px;
 }
 li::before {
     content: "•"; 
@@ -60,7 +61,7 @@ h1 {
 .wrapper {
     margin: 0;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 40px 10px;
     height: 100%;
 }
 .twitter {
@@ -103,6 +104,10 @@ footer {
         height: 100%;
     }
 
+    .wrapper > * {
+        padding-left: 50px;
+    }
+
     .header,
     .footer {
         grid-column: 1 / -1;
@@ -120,6 +125,7 @@ footer {
     margin-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
