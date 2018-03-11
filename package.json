@@ -6,17 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "handlebars": "node index.js",
+    "html": "npm run handlebars && npm run miniHtml",
     "css": "npm run postcss:main && npm run postcss:pasta && npm run postcss:recipe",
     "postcss:main": "node_modules/postcss-cli/bin/postcss --use cssnano -c postcss-config.json -o dist/css/main.css src/css/main.css",
     "postcss:pasta": "node_modules/postcss-cli/bin/postcss --use cssnano -c postcss-config.json -o dist/css/pasta.css src/css/pasta.css",
     "postcss:recipe": "node_modules/postcss-cli/bin/postcss --use cssnano -c postcss-config.json -o dist/css/recipe.css src/css/recipe.css",
+    "miniHtml:main": "node_modules/html-minifier/cli.js -c html-mini-config.json dist/index.html -o dist/index.html",
+    "miniHtml:pasta": "node_modules/html-minifier/cli.js -c html-mini-config.json dist/pasta.html -o dist/pasta.html",
+    "miniHtml:cookies": "node_modules/html-minifier/cli.js -c html-mini-config.json dist/cookies.html -o dist/cookies.html",
+    "miniHtml": "npm run miniHtml:main && npm run miniHtml:pasta && npm run miniHtml:cookies",
     "assets": "cp -R src/assets dist/ && cp src/favicon.ico dist/",
     "clean": "rm -rf dist",
     "watch": "npm run watch:hbs & npm run watch:css & npm run watch:assets",
     "watch:hbs": "onchange 'src/templates/*.hbs' 'src/pages/*.hbs' 'src/index.hbs' -- npm run handlebars",
     "watch:css": "onchange 'src/css/*.css' -- npm run css",
     "watch:assets": "onchange 'src/assets/*.*' -- npm run assets",
-    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run handlebars && npm run css && npm run assets",
+    "build": "npm run clean && mkdir dist && cp CNAME dist/ && npm run html && npm run css && npm run assets",
     "serve": "http-server -c-1 dist/"
   },
   "repository": {
@@ -31,6 +36,7 @@
   "devDependencies": {
     "cssnano": "^3.10.0",
     "handlebars": "^4.0.11",
+    "html-minifier": "^3.5.10",
     "onchange": "^3.3.0",
     "postcss": "^6.0.17",
     "postcss-cli": "^5.0.0"

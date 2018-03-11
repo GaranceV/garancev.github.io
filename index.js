@@ -17,7 +17,6 @@ const data = {
         subtitle: 'Pasta cooking sheet',
         css: [
             'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css',
-            'https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.2.3/paper.css',
             'https://fonts.googleapis.com/css?family=Lora',
             'css/pasta.css'
         ]

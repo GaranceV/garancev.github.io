@@ -25,6 +25,15 @@ a {
     outline: none;
     padding: 3px;
 }
+
+ul {
+    list-style: none;
+}
+li::before {
+    content: "•"; 
+    color: #ffaf38;
+    margin-right: 3px;
+}
 a:focus:not(.img) {
     background-color: #ffaf38;
     padding: 1px;
@@ -49,7 +58,7 @@ h1 {
 * Original by Rachel Andrews, gridbyexample.com
 **/
 .wrapper {
-    margin: 0 20px;
+    margin: 0;
     display: grid;
     grid-gap: 10px;
     height: 100%;
@@ -65,6 +74,14 @@ h1 {
 
 .clip-circle {
     clip-path: url(#circle);
+}
+
+header, footer {
+    background-color: #ffaf38;
+}
+
+footer {
+    padding-top: 20px;
 }
 @media screen and (min-width: 630px) {
 
@@ -93,8 +110,6 @@ h1 {
         clear: both;
     }
 
-    .footer {
-    }
     .twitter-text {
         padding-top: 50px;
     }
@@ -103,6 +118,8 @@ h1 {
 .wrapper > * {
   /* needed for the floated layout*/
     margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
