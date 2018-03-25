@@ -1,6 +1,5 @@
 body {
-    font-family: 'Lora', serif;    
-    color: white;    
+    font-family: 'Lora', serif;
     width: 100%;
 }
 
@@ -24,6 +23,9 @@ article {
     html {
         background-color: #004181;        
         background: linear-gradient(135deg, #1e5799 0%,#004181 0%,#207cca 50%,#7db9e8 100%);
+    }
+    body {
+        color: white;
     }
     button {
         width: 100px;

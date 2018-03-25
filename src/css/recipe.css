@@ -1,8 +1,5 @@
 
-img {
-    width: 100%;
-    max-width: 475px;    
-}
+/* Grid definition */
 .header {
     grid-area: head;
 }
@@ -16,14 +13,6 @@ img {
     grid-area: foot;
 }
 
-.step {
-    padding: 12px 8px;
-}
-
-.step:nth-child(even){
-    background-color: #ffaf384d;
-}
-
 .wrapper {
     grid-template-areas: 
         "head"
@@ -32,6 +21,20 @@ img {
         "nav";
     grid-template-rows: 120px 1fr 120px 50px;
     grid-template-columns: 1fr;
+}
+
+
+.img {
+    width: 100%;
+    max-width: 475px;
+}
+
+.step {
+    padding: 12px 8px;
+}
+
+.step:nth-child(even){
+    background-color: #ffaf384d;
 }
 
 @media screen and (min-width: 400px) {

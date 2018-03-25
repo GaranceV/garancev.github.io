@@ -13,6 +13,7 @@ Personal website repository.
 * More automation for the recipes pages
 * Manifest.json (/)
 * Service worker (/)
+* Shorter builds
 * ...
 
 ### Missing pages: 

@@ -1,34 +1,25 @@
 // Modules //
 const Handlebars = require('handlebars'),
-  fs = require('fs');
+  fs = require('fs'),
+  util = require('util'),
+  hbsData = require('./src/templates.json').data;
+
+const readFile = util.promisify(fs.readFile);
 
   // Constants //
 const encoding = 'utf8';
-
-// Templates data //
-const data = {
-    home: {
-        subtitle: 'Home',
-        css: [
-            'css/main.css'
-        ]
-    }, 
-    pasta: {
-        subtitle: 'Pasta cooking sheet',
-        css: [
-            'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css',
-            'https://fonts.googleapis.com/css?family=Lora',
-            'css/pasta.css'
-        ]
-    },
-    cookies: {
-        subtitle: ' Classic cookies',
-        css: [
-            'css/main.css',
-            'css/recipe.css'
-        ]
-    }
-};
+const partials = [
+    'head', 
+    'footer', 
+    'twitter'
+  ], 
+  pages = [
+    'index', 
+    'cookies', 
+    'pasta',
+    'reads',
+    'haikus'
+  ];
 
 const compileDoc = (source, data, output) => {
     const template = Handlebars.compile(source);
@@ -37,39 +28,26 @@ const compileDoc = (source, data, output) => {
         if (error) throw error;
     });
 }
-const compileCookies = (error, source) => {
-    if (error) throw error;
-    compileDoc(source, data.cookies, 'cookies');
-}
-const compilePasta = (error, source) => {
-    if (error) throw error;
-    compileDoc(source, data.pasta, 'pasta');
-}
-const compileIndex = (error, source) => {
-    if (error) throw error;
-    compileDoc(source, data.home, 'index');
+
+async function compileTemplates() {
+  pages.forEach((item) => {
+    readFile('src/pages/' + item + '.hbs').then((data) => {
+      compileDoc('' + data, hbsData[item], item);
+    });
+  });
 }
 
-const compileTemplates = () => {
-    fs.readFile('src/index.hbs', encoding, compileIndex);
-    fs.readFile('src/pages/cookies.hbs', encoding, compileCookies);
-    fs.readFile('src/pages/pasta.hbs', encoding, compilePasta);
+async function compilePartials() {
+  partials.forEach((item) => {
+    readFile('src/partials/' + item + '.hbs').then(data => {
+      Handlebars.registerPartial(item, '' + data);
+    });
+  });
 }
-const registerTwitter = (error, source) => {
-    if (error) throw error;
-    Handlebars.registerPartial('twitter', source);
-    
-    compileTemplates();
+
+async function main() {
+  await compilePartials();
+  compileTemplates();
 }
-const registerFooter = (error, source) => {
-    if (error) throw error;
-    Handlebars.registerPartial('footer', source);
-    
-    fs.readFile('src/templates/twitter.hbs', encoding, registerTwitter);
-}
-const registerHead = (error, source) => {
-    if (error) throw error;
-    Handlebars.registerPartial('head', source);
-    fs.readFile('src/templates/footer.hbs', encoding, registerFooter);
-}
-fs.readFile('src/templates/head.hbs', encoding, registerHead);
+
+main();

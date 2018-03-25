@@ -1,0 +1,43 @@
+{
+    "data" : {
+        "index": {
+            "subtitle": "Home",
+            "css": [
+                "css/main.css"
+            ],
+            "twitterHandle": "garanceVallat",
+            "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+        }, 
+        "pasta": {
+            "subtitle": "Pasta cooking sheet",
+            "css": [
+                "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css",
+                "https://fonts.googleapis.com/css?family=Lora",
+                "css/pasta.css"
+            ]
+        },
+        "cookies": {
+            "subtitle": "Classic cookies",
+            "css": [
+                "css/main.css",
+                "css/recipe.css"
+            ]
+        },
+        "reads": {
+            "subtitle": "Interesting reads",
+            "css": [
+                "css/main.css",
+                "css/reads.css"
+            ]
+        },
+        "haikus": {
+            "subtitle": "Haikus Twitter bot",
+            "css": [
+                "css/main.css",
+                "css/haikus.css"
+            ],
+            "twitterHandle": "haikusEveryday",
+            "twitterPhoto": "https://pbs.twimg.com/profile_images/977516839151554565/16iboQ8j_400x400.jpg"
+        }
+    }
+}
