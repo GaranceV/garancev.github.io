@@ -1,5 +1,3 @@
-@import url("main.css");
-
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +10,9 @@
 
 .home_img {
     align-self: center;
+    width: 100%;
 }
+
 @media screen and (min-width: 630px) {
     .home {
         justify-content: space-around;

@@ -1,6 +1,4 @@
 
-@import url("main.css");
-
 /* Grid definition */
 .header {
     grid-area: head;
