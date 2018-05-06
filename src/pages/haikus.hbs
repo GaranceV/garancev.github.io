@@ -1,45 +1,38 @@
 <!doctype html>
 <html lang="en">
-    {{> head}}
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <h1>@EverydayHaikus</h1>
-                <p></p>A twitter robot delivering a daily dose of Haikus, right in your timeline!</p>
-            </header>
-            
-            <article class="content">
-                <h2>Facts</h2>
-                <ul>
-                    <li>The code lives in Github (<a href="https://github.com/garancev/twitterbot-haikus">go to haikuEveryday github repo</a>).</li>
-                    <li>The code is uploaded online on <a hrf="https://heroku.com">Heroku</a>.</li>
-                    <li>All the haikus live in a postgreSQL database.</li>
-                    <li>It is scheduled to tweet every day at 9.30 AM. </li>
-                </ul>
+{{> head}}
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="./index.html">Home</a></li>
+                <li class="nav_li"><a href="./about.html">About me</a></li>
+                <li class="nav_li nav_li-focused">Tech</li>
+                <li class="nav_li"><a href="./reads.html">Reading</a></li>
+                <li class="nav_li"><a href="./cookies.html">Cooking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="haikus">
+        <h1>@EverydayHaikus</h1>
+        <p>A twitter robot delivering a daily dose of Haikus, right in your timeline!</p>
+        <article class="haikus_content">
+            <h2>Quick facts</h2>
+            <ul>
+                <li class="content_li">The code lives in Github (<a href="https://github.com/garancev/twitterbot-haikus">go to haikuEveryday github repo</a>).</li>
+                <li class="content_li">The code is uploaded online on <a href="https://heroku.com">Heroku</a>.</li>
+                <li class="content_li">All the haikus live in a postgreSQL database.</li>
+                <li class="content_li">It is scheduled to tweet every day at 9.30 AM. </li>
+            </ul>
                 
-                <h2>Why Heroku ?</h2>
-                Amongst others, this 
-                <a href="https://medium.com/@mattpopovich/how-to-build-and-deploy-a-simple-twitter-bot-super-fast-with-node-js-and-heroku-7b322dbb5dd3">
-                short tutorial by Matt Popovich</a> convinced me to used Heroku, due to the scheduler plugin. 
-                I took the opportunity to also create the database over there, within the same app. 
-            </article>
+            <h2>Why Heroku ?</h2>
+            Amongst others, this 
+            <a href="https://medium.com/@mattpopovich/how-to-build-and-deploy-a-simple-twitter-bot-super-fast-with-node-js-and-heroku-7b322dbb5dd3"> short tutorial by Matt Popovich</a> convinced me to used Heroku, due to the scheduler plugin. I took the opportunity to also create the database over there, within the same app. 
+        </article>
 
-    {{> twitter}}
-            
-            <aside class="sidebar">
-                <a href="index.html">Back to home</a>
-            </aside>
-            {{> footer}}
-        </div>
+        {{> twitter}}
+    </main>
 
-         <!-- Google Analytics -->
-         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109067520-1"></script>
-         <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
- 
-         gtag('config', 'UA-109067520-1');
-         </script>
-    </body>
+    {{> footer footer}}
+</body>
 </html>

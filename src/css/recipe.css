@@ -1,4 +1,6 @@
 
+@import url("main.css");
+
 /* Grid definition */
 .header {
     grid-area: head;
@@ -57,7 +59,7 @@
         display: inline-block;
         margin-left: 20px;
     }
-    .img {
+    .recipe_img {
         display: inline-block;
         width: 350px;
     }

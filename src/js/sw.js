@@ -32,7 +32,7 @@ self.addEventListener('fetch', function(event) {
 //for update SW cache cleaning
 self.addEventListener('activate', function(event) {
 
-    var cacheWhitelist = ['florevallat-site-cache-v2'];
+    var cacheWhitelist = ['florevallat-site-cache-v3'];
 
     event.waitUntil(
         caches.keys().then(function(cacheNames) {

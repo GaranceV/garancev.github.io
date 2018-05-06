@@ -1,15 +1,25 @@
 <!doctype html>
 <html lang="en">
-    {{> head}}
-    <body>
-        <div class="wrapper">
-            <header class="header">
+{{> head}}
+<body>
+     <header>
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="./index.html">Home</a></li>
+                <li class="nav_li"><a href="./about.html">About me</a></li>
+                <li class="nav_li"><a href="./haikus.html">Tech</a></li>
+                <li class="nav_li"><a href="./reads.html">Reading</a></li>
+                <li class="nav_li nav_li-focused">Cooking</li>
+            </ul>
+        </nav>
+    </header>
+            <main>
                 <h1>Classic cookies</h1>
-            </header>
-            
+                
+            </main>
             <article class="content">
                 <div>
-                <img class="img" src="assets/classic-cookies.jpeg" alt="Stack of golden cookies"/>
+                <img class="recipe_img" src="assets/classic-cookies.jpeg" alt="Stack of golden cookies"/>
                 <section class="details">
                     <h2>Details</h2>
                     <ul>
@@ -46,20 +56,6 @@
                 </div>
                
             </article>
-            <aside class="sidebar">
-                <a href="index.html">Back to home</a>
-            </aside>
-            {{> footer}}
-        </div>
-
-         <!-- Google Analytics -->
-         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109067520-1"></script>
-         <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
- 
-         gtag('config', 'UA-109067520-1');
-         </script>
-    </body>
+    {{> footer footer}}
+</body>
 </html>

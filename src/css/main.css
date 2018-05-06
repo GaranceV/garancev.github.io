@@ -1,141 +1,121 @@
-/** FONTS **/
+@import url("twitter.css");
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 html {
     font-family: Verdana, Geneva, sans-serif;
 	font-style: normal;
 	font-variant: normal;
     font-weight: 400;
     font-size: 1em;
-	line-height: 1.4;
-}
-@media screen and (min-width: 500px) {
-    font-size: 1.125em;
-	line-height: 1.5;
-}
-body,
-html {
+    line-height: 1.4;
     height: 100%;
-    margin: 0;
+    overflow-wrap: break-word;
 }
 
-h2, p {
-    margin: 0;
+@media screen and (min-width: 500px) {
+    font-size: 1.2em;
+	line-height: 1.5;
 }
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+@media screen and (min-width: 630px) {
+    body {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+
+::-moz-selection {
+    background: #ffaf38; 
+}
+::selection {
+    background: #ffaf38; 
+}
+
 a {
     color: inherit;
     outline: none;
     padding: 3px;
 }
 
+a:hover:not(.img),
+a:focus:not(.img) {
+    background-color: #ffaf38;
+}
+
+a:active:not(.img) {
+    background-color: #ffd43d;
+}
+
 ul {
     list-style: none;
-    padding-left: 15px;
 }
-li::before {
+
+h1 {
+    font-size: 3em;
+}
+
+h1, h2, h3 {
+    font-family: Geneva, Verdana, sans-serif;    
+}
+
+.nav_ul {
+    border-bottom: #ffaf38 1px solid;
+}
+
+.nav_li {
+    display: inline-block;
+    padding: 20px;
+}
+.nav_li a {
+    padding: 15px;
+}
+
+@media screen and (min-width: 630px) {
+    .nav_ul {
+        width: 57%;
+        margin-left: auto;
+        text-align: right;
+        padding-bottom: 25px;
+    }
+}
+
+.nav_li-focused {
+    border: 2px solid #ffaf38;
+}
+
+.footer {
+    border-top: #ffaf38 1px solid;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.footer_info {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 630px) {
+    .footer {
+        flex-wrap: nowrap;
+    }
+}
+
+.content_li {
+    padding-top: 10px;
+}
+
+.content_li::before {
     content: "•"; 
     color: #ffaf38;
     margin-right: 3px;
-}
-a:focus:not(.img) {
-    background-color: #ffaf38;
-    padding: 1px;
-}
-.circle {
-    fill: none;
-    stroke: #00aced;
-    stroke-width: 2;
-}
-a.img:focus .circle {
-    stroke: #ffaf38;
-    stroke-width: 4;
-}
-
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-h1 {
-    text-align: center;
-}
-/**
-* Original by Rachel Andrews, gridbyexample.com
-**/
-.wrapper {
-    margin: 0;
-    display: grid;
-    grid-gap: 40px 10px;
-    height: 100%;
-}
-.twitter {
-    grid-row: 3;
-}
-.twitter-text {
-    width: 45%;
-    vertical-align: top;
-    padding-top: 20px;
-}
-
-.clip-circle {
-    clip-path: url(#circle);
-}
-
-header, footer {
-    background-color: #ffaf38;
-}
-
-footer {
-    padding-top: 20px;
-}
-@media screen and (min-width: 630px) {
-
-  /*Float as no-grid support*/
-    .sidebar {
-        float: left;
-        width: 19.1489%;
-    }
-
-    .content {
-        float: right;
-        width: 79.7872%;
-    }
-
-    .wrapper {
-        margin-top: auto;
-        margin-bottom: auto;
-        grid-template-columns: 3fr 2fr;
-        height: 100%;
-    }
-
-    .wrapper > * {
-        padding-left: 50px;
-    }
-
-    .header,
-    .footer {
-        grid-column: 1 / -1;
-        /* needed for the floated layout */
-        clear: both;
-    }
-
-    .twitter-text {
-        padding-top: 50px;
-    }
-}
-
-.wrapper > * {
-  /* needed for the floated layout*/
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
-@supports (display: grid) {
-    .wrapper > * {
-        width: auto;
-        margin: 0;
-    }
-}
-
-.ib {
-    display: inline-block;
 }

@@ -1,0 +1,19 @@
+.twitter {
+    display: flex;
+    align-items: center;
+}
+.twitter_img,
+.twitter_text {
+    display: inline-block;
+}
+
+.twitter_circle {
+    fill: none;
+    stroke: #00aced;
+    stroke-width: 2;
+}
+
+a.img:focus .twitter_circle {
+    stroke: #ffaf38;
+    stroke-width: 4;
+}

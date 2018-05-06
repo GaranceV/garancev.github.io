@@ -8,12 +8,12 @@ Personal website repository.
 * Style recipess (/)
 * Minify CSS (/)
 * Minify JS (/)
-* obsfuscate class names
 * Minify HTML (/)
-* More automation for the recipes pages
 * Manifest.json (/)
 * Service worker (/)
 * Shorter builds
+* More automation for the recipes pages
+* obsfuscate class names
 * ...
 
 ### Missing pages: 

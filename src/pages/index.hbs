@@ -2,24 +2,31 @@
 <html lang="en">
 {{> head}}
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <h1>Hello!</h1>
-            <p>I'm Garance, a software engineer focused on web development. 
-                If you don't know how to pronounce Garance, no worries, you can call me Flore. 
+    <header>
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li class="nav_li nav_li-focused">Home</li>
+                <li class="nav_li"><a href="./about.html">About me</a></li>
+                <li class="nav_li"><a href="./haikus.html">Tech</a></li>
+                <li class="nav_li"><a href="./reads.html">Reading</a></li>
+                <li class="nav_li"><a href="./cookies.html">Cooking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <h1 class="home_title">Hello!</h1>
+        <img class="home_img" src="assets/mafalda-big.jpg" alt="Garance's profile picture">
+        <article class="home_content">  
+            <p>I'm Garance, I am a software engineer focused on web development. I live in Barcelona, and if like my colleagues, you don't know how to pronounce Garance, feel free to call me Flore!
+                You can find this website under <a href="https://garanceflore.com">garanceflore.com</a> as well. 
             </p>
-            <p>I live in sunny Barcelona, I love that city!</p>
-            <p>Besides development, I love cooking, as well as reading. </p>
-        </header>
-        <article class="content">
-            <section class="ib">
-            <p>This webiste is meant to be a blog, an experimentation field, a hosting spot for different projects... Anything really! </p>
-            </section>
-            
+            <p>These days, I work only on the mobile web. I mostly write code for the frontend, although I can dive in our java backend when needed. I feel strongly about accessibility, both web & physical. Also, in my day-to-day project, we are performance freaks!</p>
+            <p>Besides development, I love building things on my own, as well as cooking, and reading. It's a bit of everything you will find on this website. Explanations of <a href="./haikus.html">twitter bots</a>, <a href="./cookies.html">personal recipes</a> I want to saveguard, or <a href="./reads.html">books</a> I feel strongly about!</p>
         </article>
-    {{> twitter}}
+    </main>
+   
 
-            <aside class="sidebar">
+            {{!-- <aside class="sidebar">
                 <h2>Links: </h2>
                 <ul>
                     <li><a href="cookies.html">My simple cookies recipe</a></li>
@@ -27,12 +34,8 @@
                     <li><a href="reads.html">A list of interesting reads</a></li>
                     <li><a href="haikus.html">My twitter bot of haikus</a></li>
                 </ul>
-        </aside>
+        </aside> --}}
 
-        {{> footer}}
-    </div>
-
-    <!-- Google Analytics -->
-
+    {{> footer footer}}
 </body>
 </html>

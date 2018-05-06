@@ -1,0 +1,28 @@
+@import url("main.css");
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.home_title {
+    width: 100%;
+}
+
+@media screen and (min-width: 630px) {
+    .home {
+        justify-content: space-around;
+        margin-bottom: 90px;
+    }
+
+    .home_content {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .home_img {
+        display: inline-block;
+        width: 300px;
+    }
+}

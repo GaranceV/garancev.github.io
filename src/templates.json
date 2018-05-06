@@ -3,10 +3,12 @@
         "index": {
             "subtitle": "Home",
             "css": [
-                "css/main.css"
+                "css/index.css"
             ],
-            "twitterHandle": "garanceVallat",
-            "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+            }
         }, 
         "pasta": {
             "subtitle": "Pasta cooking sheet",
@@ -19,25 +21,44 @@
         "cookies": {
             "subtitle": "Classic cookies",
             "css": [
-                "css/main.css",
                 "css/recipe.css"
-            ]
+            ],
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+            }
         },
         "reads": {
             "subtitle": "Interesting reads",
             "css": [
-                "css/main.css",
                 "css/reads.css"
-            ]
+            ],
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+            }
         },
         "haikus": {
             "subtitle": "Haikus Twitter bot",
             "css": [
-                "css/main.css",
                 "css/haikus.css"
             ],
             "twitterHandle": "haikusEveryday",
-            "twitterPhoto": "https://pbs.twimg.com/profile_images/977516839151554565/16iboQ8j_400x400.jpg"
+            "twitterPhoto": "https://pbs.twimg.com/profile_images/977516839151554565/16iboQ8j_400x400.jpg",
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+            }
+        },
+        "about": {
+            "subtitle": "About",
+            "css": [
+                "css/about.css"
+            ],
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+            }
         }
     }
 }
