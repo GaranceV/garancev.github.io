@@ -14,7 +14,7 @@
 }
 
 .wrapper {
-    grid-template-areas: 
+    grid-template-areas:
         "head"
         "main"
         "foot"
@@ -25,7 +25,6 @@
 
 
 .img {
-    width: 100%;
     max-width: 475px;
 }
 
@@ -44,7 +43,7 @@
         margin-right: auto;
         margin-bottom: 15px;
     }
-    .details, 
+    .details,
     .img {
         display: block;
     }
@@ -59,11 +58,13 @@
     }
     .recipe_img {
         display: inline-block;
-        width: 350px;
+		width: 350px;
+		-webkit-clip-path: ellipse(50% 46% at 50% 50%);
+		clip-path: ellipse(50% 46% at 50% 50%);
     }
 
     .wrapper {
-        grid-template-areas: 
+        grid-template-areas:
             "head head"
             "main nav"
             "foot foot";

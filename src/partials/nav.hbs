@@ -1,10 +1,65 @@
-TODO: find a way to factorise it!
+
 <nav class="nav">
     <ul class="nav_ul">
-        <li class="nav_li nav_li-focused">Home</li>
-        <li class="nav_li"><a href="./about.html">About me</a></li>
-        <li class="nav_li"><a href="./haikus.html">Tech</a></li>
-        <li class="nav_li"><a href="./reads.html">Reading</a></li>
-        <li class="nav_li"><a href="./cookies.html">Cooking</a></li>
+		<li class="nav_li
+			{{#home}}
+				nav_li-focused">
+					Home
+			{{/home}}
+			{{^home}}
+				">
+					<a href="./home.html">Home</a>
+			{{/home}}
+		</li>
+		<li class="nav_li
+			{{#about}}
+				nav_li-focused">
+					About
+			{{/about}}
+			{{^about}}
+				">
+					<a href="./about.html">About</a>
+			{{/about}}
+		</li>
+		<li class="nav_li
+			{{#tech}}
+				nav_li-focused">
+					Tech
+			{{/tech}}
+			{{^tech}}
+				">
+					<a href="./haikus.html">Tech</a>
+			{{/tech}}
+		</li>
+		<li class="nav_li
+			{{#reads}}
+				nav_li-focused">
+					Reading
+			{{/reads}}
+			{{^reads}}
+				">
+					<a href="./reads.html">Reading</a>
+			{{/reads}}
+		</li>
+		<li class="nav_li
+			{{#cooking}}
+				nav_li-focused">
+					Cooking
+			{{/cooking}}
+			{{^cooking}}
+				">
+					<a href="./cooking.html">Cooking</a>
+			{{/cooking}}
+		</li>
     </ul>
 </nav>
+{{!--
+<nav class="nav">
+            <ul class="nav_ul">
+                <li class="nav_li nav_li-focused">Home</li>
+                <li class="nav_li"><a href="./about.html">About me</a></li>
+                <li class="nav_li"><a href="./haikus.html">Tech</a></li>
+                <li class="nav_li"><a href="./reads.html">Reading</a></li>
+                <li class="nav_li"><a href="./cookies.html">Cooking</a></li>
+            </ul>
+        </nav> --}}

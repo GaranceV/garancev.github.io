@@ -1,0 +1,36 @@
+{
+	"data": {
+		"cookies": {
+			"nav": {},
+			"name": "cookies",
+			"title": "Classic cookies",
+			"image": "assets/classic-cookies.jpeg",
+			"alt": "Stack of golden cookies",
+			"quickDesc": "My delicious, classic chocolate chip cookies recipe.",
+            "css": [
+                "css/recipe.css",
+                "css/main.css"
+            ],
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+            }
+		},
+		"risotto": {
+			"nav": {},
+			"title": "Risotto",
+			"image": "",
+			"name": "risotto",
+			"quickDesc": "My usual risotto recipe, with nuts and parmigiano. ",
+            "css": [
+                "css/recipe.css",
+                "css/main.css"
+            ],
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+            }
+
+		}
+	}
+}

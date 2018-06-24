@@ -6,8 +6,10 @@ const encoding = 'utf8',
   dist = __dirname + '/../dist/';
 
 const htmlPages = [
-  'index', 
-  'cookies', 
+  'index',
+  'cooking',
+  'recipes/cookies',
+  'recipes/risotto',
   'pasta',
   'reads',
   'haikus',
@@ -22,7 +24,7 @@ function minifyHtml() {
       console.log('>>> ' + file + ' successfully read');
       const minifiedHtml = minify('' + data, config);
       console.log('>>> ' + file + ' successfully minified');
-        
+
       fs.writeFile(file, minifiedHtml, encoding, error => {
         if (error) throw error;
         console.log('>>> ' + file + ' successfully rewritten');
@@ -33,9 +35,9 @@ function minifyHtml() {
     }
   });
 }
-  
+
 function main() {
   minifyHtml();
 }
-  
+
 main();

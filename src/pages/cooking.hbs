@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+{{> head}}
+<body>
+     <header>
+		{{> nav nav}}
+    </header>
+	<main>
+		<ul class="recipes">
+		{{#each recipes}}
+			<li class="recipe">
+				<div class="img">
+					<img src=
+						{{#if this.image}}
+							"{{this.image}}"
+						{{else}}
+							"assets/glitter-pot.png"
+						{{/if}}
+					alt=""/>
+				</div>
+				<div class="text">
+					<h2>
+						<a href="{{this.name}}.html">{{this.title}}</a>
+					</h2>
+					<p>{{this.quickDesc}}</p>
+					<a class="toRecipe" aria-hidden="true" href="{{this.name}}.html">Read more →</a>
+				</div>
+			</li>
+		{{/each}}
+		</ul>
+		</main>
+
+    {{> footer footer}}
+</body>
+</html>

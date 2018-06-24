@@ -1,16 +1,19 @@
 {
     "data" : {
         "index": {
-            "subtitle": "Home",
+			"subtitle": "Home",
+			"nav": {
+				"home": true
+			},
             "css": [
                 "css/index.css",
                 "css/main.css"
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
             }
-        }, 
+        },
         "pasta": {
             "subtitle": "Pasta cooking sheet",
             "css": [
@@ -18,32 +21,41 @@
                 "https://fonts.googleapis.com/css?family=Lora",
                 "css/pasta.css"
             ]
-        },
-        "cookies": {
-            "subtitle": "Classic cookies",
+		},
+		"cooking": {
+            "subtitle": "Cooking",
+			"nav": {
+				"cooking": true
+			},
             "css": [
-                "css/recipe.css",
-                "css/main.css"
+				"css/main.css",
+				"css/cooking.css"
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
             }
-        },
+		},
         "reads": {
             "subtitle": "Interesting reads",
-            "css": [
+			"nav": {
+				"reads": true
+			},
+			"css": [
                 "css/reads.css",
                 "css/main.css"
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
             }
         },
         "haikus": {
             "subtitle": "Haikus Twitter bot",
-            "css": [
+			"nav": {
+				"tech": true
+			},
+			"css": [
                 "css/haikus.css",
                 "css/main.css"
             ],
@@ -51,18 +63,21 @@
             "twitterPhoto": "https://pbs.twimg.com/profile_images/977516839151554565/16iboQ8j_400x400.jpg",
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
             }
         },
         "about": {
             "subtitle": "About",
-            "css": [
+			"nav": {
+				"about": true
+			},
+			"css": [
                 "css/about.css",
                 "css/main.css"
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"    
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
             }
         }
     }

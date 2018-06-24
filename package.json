@@ -15,7 +15,7 @@
     "miniJs": "npm run miniJs:registersw && npm run miniJs:sw",
     "miniJs:registersw": "node_modules/uglify-js/bin/uglifyjs dist/js/registersw.js -o dist/js/registersw.js -c -m",
     "miniJs:sw": "node_modules/uglify-js/bin/uglifyjs dist/sw.js -o dist/sw.js -c -m",
-    "clean": "rm -rf dist && mkdir dist && mkdir dist/js && mkdir dist/css",
+    "clean": "rm -rf dist && mkdir dist dist/js dist/css dist/recipes",
     "watch:hbs": "onchange 'src/templates/*.hbs' 'src/pages/*.hbs' 'src/index.hbs' -- npm run handlebars",
     "watch:assets": "onchange 'src/assets/*.*' -- npm run assets",
     "watch:js": "onchange 'src/js/registersw.js' -- npm run js:sw && onchange 'src/js/sw.js' -- npm run pwa",

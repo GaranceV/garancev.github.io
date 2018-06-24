@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+{{> head}}
+<body>
+     <header>
+       	{{> nav nav}}
+    </header>
+	<main>
+		<h1>{{title}}</h1>
+
+		<article class="content">
+			<div>
+				<img class="recipe_img" src=
+					{{#if image}}
+						"{{image}}" alt="{{alt}}"
+					{{else}}
+						"assets/glitter-pot.png" alt=""
+					{{/if}}
+				/>
+				<section class="details">
+					<h2>Details</h2>
+					<ul>
+						<li class="content_li">Oven temperature: 180º</li>
+						<li class="content_li">Servings: ~30</li>
+					</ul>
+				</section>
+			</div>
+			<h2>Ingredients</h2>
+			<ul>
+				<li class="content_li">200 g of white flour</li>
+				<li class="content_li">1 bag of baking powder</li>
+				<li class="content_li">100g of non refined cane sugar</li>
+				<li class="content_li">125g of melted butter (and cooled down before using)</li>
+				<li class="content_li">1 egg</li>
+				<li class="content_li">1 egg yolk</li>
+				<li class="content_li">2 teaspoons of vanilla extract</li>
+				<li class="content_li">100g of dark chocolate chips</li>
+			</ul>
+			<h2>Steps</h2>
+			<div class="steps">
+					<p class="step">Preheat oven at 180º. </p>
+			<p class="step">Mix all dry ingredients in your main bowl, and set aside. </p>
+			<p class="step">Mix butter, eggs and vanilla together, in a separate bowl. </p>
+
+			<p class="step">Incorporate in the dry mix until homogenous, with a wooden spoon.
+				Add as much flour as needed, until the consitency is right:
+				it must be solid enough so that it can be manipulate dby hand,
+				without the dough staying on your fingers. </p>
+			<p class="step">Make small balls of dough by hand, and place them on a baking sheet, on an over plate.
+				Keep them ~3 cm apart, to make sure they don't blend together when expanding. </p>
+			<p class="step">Bake for 12-15 minutes, depending on the size of the balls</p>
+			<p class="step">Don't remove from the sheet until cooled down, to avoid breaking them. </p>
+			</div>
+
+		</article>
+	</main>
+
+    {{> footer footer}}
+</body>
+</html>

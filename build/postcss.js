@@ -5,22 +5,13 @@ const cssnano = require('cssnano');
 const encoding = 'utf8',
   dist = __dirname + '/../dist/css/',
   src = __dirname + '/../src/css/';
-const cssPages = [
-    'haikus', 
-    'main', 
-    'pasta',
-    'reads',
-    'recipe',
-    'index',
-    'twitter',
-    'about'
-  ];
+  const cssPages = fs.readdirSync(src);
 
 function throughPostCSS() {
     cssPages.forEach((item) => {
       try {
-        const fileSrc = src + item + '.css',
-            fileDist = dist + item + '.css';
+        const fileSrc = src + item,
+            fileDist = dist + item;
         fs.readFile(fileSrc, (err, css) => {
           if (err) throw err;
           console.log('>>> successfully read ' + fileSrc);
@@ -34,19 +25,19 @@ function throughPostCSS() {
                     if ( result.map ) fs.writeFile(fileDist + '.map', result.map, encoding);
                 })
                 .catch(err => {
-                    console.log('>>> !! error in postcss processing of  ' + 'dist/' + item + '.css');
+                    console.log('>>> !! error in postcss processing of  ' + 'dist/' + item);
                     console.error(err);
                 });
         });
       } catch(err) {
-        console.log('>>> !! error with ' + 'dist/' + item + '.css');
+        console.log('>>> !! error with ' + 'dist/' + item);
         console.error(err);
       }
     });
   }
-    
+
   function main() {
     throughPostCSS();
   }
-    
+
   main();
