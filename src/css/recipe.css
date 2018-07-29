@@ -28,6 +28,10 @@
     max-width: 475px;
 }
 
+.recipe_img {
+    max-width: 100%;
+}
+
 .step {
     padding: 12px 8px;
 }
