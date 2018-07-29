@@ -13,6 +13,14 @@
                 "twitterHandle": "garanceVallat",
                 "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
             }
+		},
+		"404": {
+			"subtitle": "404",
+			"nav": {},
+            "css": [
+                "css/index.css",
+                "css/main.css"
+            ]
         },
         "pasta": {
             "subtitle": "Pasta cooking sheet",
