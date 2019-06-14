@@ -1,0 +1,8 @@
+.event {
+    display: flex;
+}
+@media screen and (min-width: 500px) {
+    .logo {
+        width: 100px;
+    }
+}

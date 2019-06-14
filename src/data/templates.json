@@ -11,7 +11,7 @@
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png"
             }
 		},
 		"404": {
@@ -41,7 +41,7 @@
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png"
             }
 		},
         "reads": {
@@ -55,7 +55,7 @@
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png"
             }
         },
         "haikus": {
@@ -68,10 +68,10 @@
                 "css/main.css"
             ],
             "twitterHandle": "haikusEveryday",
-            "twitterPhoto": "https://pbs.twimg.com/profile_images/977516839151554565/16iboQ8j_400x400.jpg",
+            "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png",
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png"
             }
         },
         "about": {
@@ -85,7 +85,21 @@
             ],
             "footer": {
                 "twitterHandle": "garanceVallat",
-                "twitterPhoto": "https://pbs.twimg.com/profile_images/539697838197063680/pZrBXgGn_400x400.jpeg"
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png"
+            }
+        },
+        "speaking": {
+            "subtitle": "Conference speaking",
+			"nav": {
+				"speaking": true
+			},
+			"css": [
+                "css/speaking.css",
+                "css/main.css"
+            ],
+            "footer": {
+                "twitterHandle": "garanceVallat",
+                "twitterPhoto": "https://pbs.twimg.com/profile_images/1117681436679647232/z60jWIV9_400x400.png"
             }
         }
     }
