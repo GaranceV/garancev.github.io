@@ -37,12 +37,12 @@
   "author": "Garance Flore Vallat",
   "license": "ISC",
   "devDependencies": {
-    "cssnano": "latest",
+    "cssnano": "^4.1.10",
     "handlebars": "latest",
     "html-minifier": "latest",
     "onchange": "latest",
     "postcss": "latest",
-    "postcss-cli": "latest",
+    "postcss-cli": "^6.1.2",
     "postcss-import": "latest",
     "uglify-js": "latest"
   }
