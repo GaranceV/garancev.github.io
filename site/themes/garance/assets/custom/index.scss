@@ -1,0 +1,25 @@
+
+::-moz-selection {
+    background: $secondaryColour;
+}
+::selection {
+    background: $secondaryColour;
+}
+
+a {
+    color: $mainColour;
+    outline: none;
+    padding: 3px;
+}
+
+a:hover:not(.img),
+a:focus:not(.img) {
+    background-color: $secondaryColour;
+}
+
+a:active:not(.img) {
+    background-color: $secondaryColour;
+}
+.is-1 {
+    color: $mainColour;
+}

@@ -1,7 +1,7 @@
 baseURL: https://garancevallat.com
 languageCode: en-us
 title: Garance Vallat
-theme: hugo-refresh-custom
+theme: garance
 # theme: ../..
 
 ########################################
