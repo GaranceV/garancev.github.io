@@ -1,0 +1,7 @@
+
+[context.production.environment]
+  HUGO_VERSION = "0.66"
+
+[build]
+publish = "site/public"
+command = "hugo --gc --minify -s site"

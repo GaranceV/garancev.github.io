@@ -2,7 +2,7 @@
 title: "Speaking"
 date: 2020-03-08T19:02:23+01:00
 hideLastModified: false
-draft: true
+draft: false
 showInMenu: true
 ---
 
@@ -14,17 +14,23 @@ In 2019, inspired by many others, I decided to try out public speaking. One year
 
 Everything you don't need to know about Git.
 
-Date: March 21st.
+Date: <span class="strike">March 21st</span>.
+
+Moved to September
 
 ### [Loop-run](https://loop-run.io/)
 
 Everything you don't need to know about Git.
 
-Date: March 26th
+Date: ~March 26th~.
+
+Moved to September
 
 ### [Wearedevelopers World congress](https://www.wearedevelopers.com/events/world-congress/)
 
-Date: May 28-29th
+Date: ~May 28-29th~
+
+Moved to 2021
 
 ## 2019
 
