@@ -14,7 +14,7 @@ In 2019, inspired by many others, I decided to try out public speaking. One year
 
 Everything you don't need to know about Git.
 
-Date: <span class="strike">March 21st</span>.
+Date: {{< strike "March 21st">}}.
 
 Moved to September
 
@@ -22,13 +22,13 @@ Moved to September
 
 Everything you don't need to know about Git.
 
-Date: ~March 26th~.
+Date: {{< strike "March 26th">}}.
 
 Moved to September
 
 ### [Wearedevelopers World congress](https://www.wearedevelopers.com/events/world-congress/)
 
-Date: ~May 28-29th~
+Date: {{< strike "May 28-29th">}}
 
 Moved to 2021
 

@@ -6,7 +6,6 @@ draft: false
 showInMenu: true
 ---
 
-
 ## Garance / Flore
 
 While I like my first given name very much, it has proven very impractical where I live, in Spain. For this reason, you can call me Flore! It's my second given name, and is almost as cool.
