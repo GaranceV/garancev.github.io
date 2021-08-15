@@ -20,5 +20,5 @@ I graduated from the French engineering school Polytech Nice Sophia in 2016, and
 
 ## Work
 
-I am curently working at [Marfeel](https://marfeel.com), where we build a mobile website template, to optimise user experience. I'm having a tremendous good time there, being surrounded by nice AND smart people.
-
+I am curently working at [FactorialHR](https://factorialhr.com) as an engineer manager.
+With my team of 5 developers and 2 product makers, we try to solve the digitalization of Payroll.

@@ -15,7 +15,8 @@ It was set in a multiplex, which made following the talks so much easier, being 
 
 ## Social track
 
-I got to meet with plenty of frontend developers, as well as designers, from all over the world! I also met [Cristina Chumillas](https://twitter.com/chumillas), who works in Barcelona. All this trip to end up meeting people from back home!
+I got to meet with plenty of frontend developers, as well as designers, from all over the world!
+I also met [Cristina Chumillas](https://twitter.com/chumillas), who works in Barcelona. All this trip to end up meeting people from back home!
 
 ## Talks
 

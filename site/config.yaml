@@ -105,7 +105,7 @@ params:
     logo: "/images/owl.png"
     # option to specify your contact email in the footer
     email:
-      link: garance.vallat@gmail.com
+      link: hola <a> garance.dev
       title: Send me an email
     # option to specify your linkedin profile in the footer
     linkedin:
@@ -132,7 +132,7 @@ params:
     #    link: username
     #    title: Instagram
     # option to specify the copyright in the footer
-    copyright: Garance Vallat - 2020
+    # copyright: Garance Vallat - 2020
 
 ###################################################################
 ################## multilanguage support options ##################

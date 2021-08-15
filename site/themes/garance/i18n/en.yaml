@@ -5,7 +5,7 @@
 - id: allTags
   translation: "All Tags"
 - id: tags
-  translation: "Tags"
+  translation: "Posts by tags"
 - id: lastModified
   translation: "Last modified"
 - id: website
@@ -15,4 +15,4 @@
 - id: copyright
   translation: "Copyright"
 - id: contacts
-  translation: "Contacts"
+  translation: "Find me in other places"

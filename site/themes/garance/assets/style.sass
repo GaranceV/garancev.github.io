@@ -11,7 +11,6 @@ $secondaryColour: #D1BA1A
 {{ if eq $type "svg" }}
 {{ $img    = $img | resources.ExecuteAsTemplate $out_fo . }}
 {{ end }}
-$loadingImage: "{{- $img.Permalink | relURL }}"
 
 @import "bulma/bulma"
 @import "fresh/core"

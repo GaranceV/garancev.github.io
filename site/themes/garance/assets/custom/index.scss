@@ -13,18 +13,41 @@ a {
 }
 
 a:hover:not(.img),
-a:focus:not(.img) {
+a:focus:not(.img),
+a:active:not(.img) {
     background-color: $secondaryColour;
 }
 
-a:active:not(.img) {
-    background-color: $secondaryColour;
+.sidebar button,
+button.menu-icon-trigger {
+    background-color: transparent;
+    border: none;
+    font-family: $fontNavbar, serif;
+    font-size: 16px;
+    &:active,
+    &:hover {
+        outline: $mainColour solid 2px;
+        outline-offset: -5px;
+    }
 }
 .is-1 {
     color: $mainColour;
 }
 
-
 .strike {
     text-decoration: line-through;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.articles-list .button.is-primary {
+    color: #fff;
+    background-color: $mainColour;
 }

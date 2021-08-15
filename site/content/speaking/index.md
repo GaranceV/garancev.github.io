@@ -6,31 +6,15 @@ draft: false
 showInMenu: true
 ---
 
-In 2019, inspired by many others, I decided to try out public speaking. One year later, I have a few engagements, and am excited to see what's next!
+In 2019, inspired by many others, I decided to try out public speaking.
+One year later, I have a few engagements, and am excited to see what's next!
 
-## 2020
+## 2020, 2021
 
-### [IWD20 Barcelona](https://wtmbarcelona.com/)
+Unfortunately, everything scheduled early 2020 got cancelled... You know why! 😷
 
-Everything you don't need to know about Git.
-
-Date: {{< strike "March 21st">}}.
-
-Moved to September
-
-### [Loop-run](https://loop-run.io/)
-
-Everything you don't need to know about Git.
-
-Date: {{< strike "March 26th">}}.
-
-Moved to September
-
-### [Wearedevelopers World congress](https://www.wearedevelopers.com/events/world-congress/)
-
-Date: {{< strike "May 28-29th">}}
-
-Moved to 2021
+I had scheduled to speak at different events, with a new talk focused on Git.
+Hit me up if you want to hear it!
 
 ## 2019
 
