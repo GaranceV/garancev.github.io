@@ -109,7 +109,7 @@ params:
       title: Send me an email
     # option to specify your linkedin profile in the footer
     linkedin:
-      link: garance-flore-vallat
+      link: garance-vallat
       title: Find me on LinkedIn
     # option to specify your facebook account in the footer;
     # **uncomment** the lines below to show in footer
@@ -121,11 +121,11 @@ params:
     github:
       link: garancev
       title: My Github
-    # option to specify your twitter username in the footer;
+    # option to specify your mastodon username in the footer;
     # **uncomment** the below lines to show in footer
-    twitter:
-      link: GaranceVallat
-      title: My Twitter
+    mastodon:
+      link: garance
+      title: Find me on Mastodon
     # option to specify your instagram username in the footer;
     # **uncomment** the below lines to show in footer
     # instagram:

@@ -55,12 +55,12 @@
               </a>
             </li>
             {{ end }}
-            {{ if isset .Site.Params.footer.twitter "link" }}
+            {{ if isset .Site.Params.footer.mastodon "link" }}
             <li>
-              <a href="https://twitter.com/{{ .Site.Params.footer.twitter.link }}">
+              <a href="https://mastodon.social/@{{ .Site.Params.footer.mastodon.link }}">
                 <span class="icon"><i class="fa fa-twitter"></i></span>
-                {{ if isset .Site.Params.footer.twitter "title" }}
-                  {{ .Site.Params.footer.twitter.title }}
+                {{ if isset .Site.Params.footer.mastodon "title" }}
+                  {{ .Site.Params.footer.mastodon.title }}
                 {{ else }}
                   Twitter
                 {{ end }}

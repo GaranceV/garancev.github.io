@@ -6,8 +6,46 @@ draft: false
 showInMenu: true
 ---
 
-In 2019, inspired by many others, I decided to try out public speaking.
-One year later, I have a few engagements, and am excited to see what's next!
+In 2019, inspired by many others, I decided to try out public speaking. 
+Since then, I've had the opportunity to speak on various stages, and to meet incredible peers!
+
+In 2023, I've started to shift my focus, from public speaking myself to coaching peers to get into public speaking. 
+I don't advocate for everyone being a public speaker forever, but I do believe everyone should try it out, see if they enjoy it or not. 
+
+## 2023
+
+### IWD 23 Barcelona
+
+Fight back against imposter syndrome - **Opening keynote**
+
+
+## 2022
+
+The world is back on track! 
+
+### [FullstackExchange London](https://skillsmatter.com/conferences/13770-fullstack-exchange-2022)
+
+Everything you don't need to know about Git
+
+[Watch it on SkillsMatter](https://skillsmatter.com/skillscasts/17698-everything-you-don-t-need-to-know-about-git).
+
+Date: July 27th
+
+### [DevConf Poland](https://2022.devconf.pl/)
+
+Everything you don't need to know about Git
+
+[Speaker profile](https://2022.devconf.pl/speakers/garance-vallat/).
+
+Date: Sept 1st
+
+### [LeadDev Berlin](https://leaddev.com/events/leaddev-berlin-2022)
+
+Fight back against imposter syndrome - lightning talk version
+
+[Watch it on LeadDev website](https://leaddev.com/berlin/video/fight-back-against-imposter-syndrome).
+
+Date: November 3rd
 
 ## 2020, 2021
 
